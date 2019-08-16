@@ -35,10 +35,20 @@
             padding: 10px 20px;
             text-decoration: none;
         }
-        ul.submenu{
-            background-color: #eee;
-            border: 1px solid #ccc;
-            text-align: left;
+        .submenu ul {
+           background-color: #eee;
+           border: 1px solid #ccc;
+           text-align: left;
+           position: absolute;
+           top: 20px;
+           left: 0;
+        }
+        .submenu li ul {
+            display: block;
+        }
+        .submenu li a ul {
+            display: block;
+            padding: 5px 10px;
         }
         .thumbnail {
            background-color: white;
@@ -54,6 +64,7 @@
     </style>
 </head>
 <body>
+
     <div class="container">
         <div class="header">
             <h1>Logo Produk</h1>
