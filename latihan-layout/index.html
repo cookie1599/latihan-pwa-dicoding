@@ -35,6 +35,10 @@
             padding: 10px 20px;
             text-decoration: none;
         }
+        .menu ul li {
+            display: inline-block;
+            position: relative;
+        }   
         .submenu ul {
            background-color: #eee;
            border: 1px solid #ccc;
@@ -42,6 +46,9 @@
            position: absolute;
            top: 20px;
            left: 0;
+        }
+        .menu ul li:hover ul.submenu  {
+           display: block;
         }
         .submenu li ul {
             display: block;
@@ -87,7 +94,7 @@
     <div class="content">
         <h2>My Articles</h2>
         <h2>My Products</h2>
-     
+            
         <div class="thumbnail">
             <img src="http://via.placeholder.com/250x150">
             <h2>Product 2</h2>
